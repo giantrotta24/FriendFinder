@@ -1,0 +1,24 @@
+{
+  "name": "friendfinder",
+  "version": "1.0.0",
+  "description": "Fill out a survey, find a friend.",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/giantrotta24/FriendFinder.git"
+  },
+  "author": "Gianfranco Trotta",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/giantrotta24/FriendFinder/issues"
+  },
+  "homepage": "https://github.com/giantrotta24/FriendFinder#readme",
+  "dependencies": {
+    "express": "^4.16.4",
+    "path": "^0.12.7"
+  }
+}
