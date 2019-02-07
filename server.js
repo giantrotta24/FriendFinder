@@ -1,13 +1,16 @@
 //require
 const express = require("express");
 const app = express();
+const path = require('path');
+const bodyParser = require('body-parser')
 
 //port
 const PORT = process.env.PORT || 8080;
 
-//enabling data parsing through express
-app.use(express.urlencoded({ extended: true }));
-app.use(express.json());
+//enabling data parsing
+app.use(bodyParser.json());
+app.use(bodyParser.urlencoded({ extended: true }));
+app.use(bodyParser.text());
 
 //calling on my routes
 require("./app/routing/apiRoutes")(app);
